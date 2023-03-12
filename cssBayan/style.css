@@ -1,11 +1,27 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
 body {
     padding: 0;
     margin: 0;
-    font-size: 16px;
+}
+
+@media (max-width: 1224px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 390px) {
-    body {
+    html {
         font-size: 10px;
     }
 }
@@ -14,6 +30,12 @@ body {
     margin: 0 auto;
     width: 80%;
     background-color: rgb(231, 230, 227);
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
 }
 
 h1 {
@@ -56,6 +78,7 @@ input {
     display: flex;
     padding: 0.25rem 1rem;
     justify-content: space-between;
+    border-bottom: black 0.2rem solid;
     background: #FFFF73;
     font-weight: bold;
     transition: all 1s;
